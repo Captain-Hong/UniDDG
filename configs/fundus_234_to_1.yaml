@@ -1,0 +1,56 @@
+DATASET:
+  NAME: '234to1'
+  TRAIN:
+    - 'D4/train'
+    - 'D2/train'
+    - 'D3/train'
+  TEST:
+    - 'D1/test'
+  TRAIN_LIST:
+    - 'filenames.txt'
+    - 'filenames.txt'
+    - 'filenames.txt'
+  TEST_LIST:
+    - 'filenames.txt'
+
+TRAIN:
+  EPOCHS: 200
+  BATCH_SIZE: 4
+  LR: 0.0001
+  WD: 1e-4
+  PRINT_FREQ: 10
+  NUM_WORKERS: 4
+  SEED: 42
+  VAL_FREQ: 1
+
+MODEL:
+  IMG_CH: 3
+  NUM_CLASSES: 3
+  NUM_FILTERS: 16
+  IMG_SIZE: 256
+  NDF: 16
+  ANATOMY_CH: 8
+  Z_LENGTH: 48
+  NORM: 'batchnorm'
+  UPSAMPLE: 'bilinear'
+
+LOSS:
+  LAMBDA_1: 5.0
+  LAMBDA_2: 5.0
+  LAMBDA_3: 10.0
+  LAMBDA_4: 1.0
+  LAMBDA_5: 5.0
+  LAMBDA_6: 1.0
+  LAMBDA_7: 1.0
+  LAMBDA_8: 1.0
+  LAMBDA_9: 1.0
+
+OIOD:
+  KERNEL_SIZE: 21
+  THRESHOLD: 0.75
+  EVAL_MODE: 'argmax'
+  KL_WEIGHT: 0.0
+
+LOG:
+  LOG_DIR: 'logs/'
+  LOG_FILE: 'training_log.log'

@@ -1,0 +1,19 @@
+[project]
+name = "uniddg"
+version = "0.1.0"
+description = "Training and evaluation code for UniDDG medical image segmentation"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "medpy<=0.5.2",
+    "numpy>=1.23.1",
+    "opencv-python-headless>=4.8.0",
+    "scipy>=1.10.1",
+    "tensorboard>=2.18.0",
+    "torch>=2.0.0",
+    "yacs>=0.1.8",
+]
+
+[tool.uv]
+link-mode = "symlink"
+package = false
