@@ -1,6 +1,6 @@
 # UniDDG
 
-Training and evaluation code for the paper **"Rethinking Domain Generalization in Medical Image Segmentation: One Image as One Domain"** ([arXiv:2501.04741](https://arxiv.org/abs/2501.04741)).
+Training and evaluation code for the paper **"Rethinking Domain Generalization in Medical Image Segmentation: One Image as One Domain"** published on Applied Soft Computing([arXiv:2501.04741](https://arxiv.org/abs/2501.04741)) (https://doi.org/10.1016/j.asoc.2026.116958).
 
 The implementation supports multi-center optic cup/disc segmentation and prostate segmentation. During training, UniDDG separates anatomy and image style, recombines them to synthesize style variations, and enforces segmentation and reconstruction consistency. Evaluation uses only the anatomy encoder and segmentation head.
 
